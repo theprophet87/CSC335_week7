@@ -28,8 +28,8 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return "Class name: " + getClass().getName() + ", Person name: " + super.getName()
+        return "Class name: " + getClass().getName() + ", Student name: " + super.getName()
                 + ", Address: " + super.getAddress() + ", Phone Number: " + super.getPhoneNumber()
-                + ", Email: " + super.getEmail();
+                + ", Email: " + super.getEmail() + ", Status: " + getStatus().toString();
     }
 }
