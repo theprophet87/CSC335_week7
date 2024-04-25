@@ -6,9 +6,7 @@ import enums.Titles;
 import interfaces.impl.BasicCourse;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class FinalTestProgram {
     public static void main(String [] args){
@@ -25,6 +23,12 @@ public class FinalTestProgram {
         Staff staff3 =  new Staff("Novak Djokovic", "102 Laver Ave #23", "8899831122", "djoker288@hotmail.com", "Room 104", 45000, LocalDate.of(2009, 3, 12), Titles.ASSISTANT);
         Staff staff4 = new Staff("Aryna Sabalenka", "488 Minsk Rd", "2325549988", "asaba37@gmail.com", "Room 108", 39000, LocalDate.of(2012,3,28));
 
+        List<Staff> staffList = Arrays.asList(staff1, staff2, staff3, staff4);
+
+        // check to see if any staff members share a title
+        if(checkForDuplicateTitles(staffList)) {
+            throw new RuntimeException("No two staff members can have the same title");
+        }
 
 
         Student student1 = new Student("Bruce Leroy", "160 10th St", "2023459837", "bleroy564@gmail.com", Status.FRESHMAN);
@@ -111,9 +115,19 @@ public class FinalTestProgram {
 
     public static void printAllDetails(List<BasicCourse> list){
         for(BasicCourse b : list){
-            System.out.println("------------------");
+            System.out.println("*****************************");
             b.courseDetails();
-            System.out.println("------------------");
         }
+    }
+
+    public static boolean checkForDuplicateTitles(List<Staff> list){
+        Map<Titles, Integer> frequencyMap = new HashMap<>();
+        for(Staff s : list){
+            frequencyMap.put(s.getTitle(), frequencyMap.getOrDefault(s.getTitle(), 0) + 1);
+            if(frequencyMap.get(s.getTitle()) > 1){
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -2,6 +2,7 @@ package classes.faculty;
 
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.List;
 
 public class testFaculty {
     public static void main(String[] args){
@@ -13,5 +14,6 @@ public class testFaculty {
 
         //print full details
         testFaculty.printDetails();
+
     }
 }

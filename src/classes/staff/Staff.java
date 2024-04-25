@@ -42,7 +42,7 @@ public class Staff extends Employee {
 
     @Override
     public void printDetails() {
-        System.out.println("Employee Name: " + getName());
+        System.out.println("Staff Name: " + getName());
         System.out.println("Title: " + getTitle().toString());
         System.out.println("Address: " + getAddress());
         System.out.println("Phone Number: " + getPhoneNumber() );

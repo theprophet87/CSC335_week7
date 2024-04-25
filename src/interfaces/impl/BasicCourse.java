@@ -39,16 +39,24 @@ public class BasicCourse implements Course {
     @Override
     public void courseDetails() {
         System.out.println("Course: " + courseName);
-        System.out.println("Faculty Details: " + faculty.toString());
+        System.out.println("Faculty Details: ");
+        System.out.println("--------------------");
+        faculty.printDetails();
+        System.out.println();
 
         System.out.println("Students Details: ");
+        System.out.println("--------------------");
         for(Student s : students){
-            System.out.println(s.toString());
+            s.printDetails();
+            System.out.println();
         }
 
         System.out.println("Staff Details: ");
+        System.out.println("--------------------");
         for(Staff s : staffList){
-            System.out.println(s.toString());
+            s.printDetails();
+            System.out.println();
+
         }
     }
 }

@@ -28,7 +28,7 @@ public class Student extends Person {
 
     @Override
     public void printDetails(){
-        System.out.println("Person Name: " + getName());
+        System.out.println("Student Name: " + getName());
         System.out.println("Address: " + getAddress());
         System.out.println("Phone Number: " + getPhoneNumber() );
         System.out.println("Email: " + getEmail());
