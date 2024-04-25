@@ -7,6 +7,10 @@ public class testStaff {
         Staff testStaff = new Staff("Johann Sebastian Bach", "999 Bach Dr", "4089872345", "jsb888@gmail.com",
                 "Room 398", 80000.00, LocalDate.of(1650, 8, 23), "Education Coordinator");
 
+        //toString method
         System.out.println(testStaff);
+
+        //print full details
+        testStaff.printDetails();
     }
 }

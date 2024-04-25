@@ -38,9 +38,19 @@ public class Staff extends Employee {
     }
 
     @Override
+    public void printDetails() {
+        System.out.println("Employee Name: " + getName());
+        System.out.println("Title: " + getTitle());
+        System.out.println("Address: " + getAddress());
+        System.out.println("Phone Number: " + getPhoneNumber() );
+        System.out.println("Email: " + getEmail());
+        System.out.println("Office: " + getOffice());
+        System.out.println("Salary: " + getSalary());
+        System.out.println("Date Hired: " + getDateHired());
+    }
+
+    @Override
     public String toString() {
-        return "Class name: " + getClass().getName() + ", Employee name: " + super.getName() + ", Title: " + getTitle()
-                + ", Address: " + super.getAddress() + ", Phone Number: " + super.getPhoneNumber()
-                + ", Email: " + super.getEmail();
+        return "Class name: " + getClass().getName() + ", Person name: " + super.getName();
     }
 }

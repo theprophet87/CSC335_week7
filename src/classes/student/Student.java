@@ -27,9 +27,16 @@ public class Student extends Person {
     }
 
     @Override
+    public void printDetails(){
+        System.out.println("Person Name: " + getName());
+        System.out.println("Address: " + getAddress());
+        System.out.println("Phone Number: " + getPhoneNumber() );
+        System.out.println("Email: " + getEmail());
+        System.out.println("Status: " + getStatus().toString());
+    }
+
+    @Override
     public String toString() {
-        return "Class name: " + getClass().getName() + ", Student name: " + super.getName()
-                + ", Address: " + super.getAddress() + ", Phone Number: " + super.getPhoneNumber()
-                + ", Email: " + super.getEmail() + ", Status: " + getStatus().toString();
+        return "Class name: " + getClass().getName() + ", Person name: " + super.getName();
     }
 }

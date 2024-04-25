@@ -50,10 +50,18 @@ public class Employee extends Person {
     }
 
     @Override
+    public void printDetails(){
+        System.out.println("Employee Name: " + getName());
+        System.out.println("Address: " + getAddress());
+        System.out.println("Phone Number: " + getPhoneNumber() );
+        System.out.println("Email: " + getEmail());
+        System.out.println("Office: " + getOffice());
+        System.out.println("Salary: " + getSalary());
+        System.out.println("Date Hired: " + getDateHired());
+    }
+
+    @Override
     public String toString() {
-        return "Class name: " + getClass().getName() + ", Employee name: " + super.getName()
-                + ", Address: " + super.getAddress() + ", Phone Number: " + super.getPhoneNumber()
-                + ", Email: " + super.getEmail() + ", Office: " + getOffice() + ", Salary: " + getSalary()
-                + ", Date Hired: " + getDateHired();
+        return "Class name: " + getClass().getName() + ", Person name: " + super.getName();
     }
 }

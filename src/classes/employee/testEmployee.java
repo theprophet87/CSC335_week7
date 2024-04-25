@@ -7,6 +7,10 @@ public class testEmployee {
         Employee testEmployee = new Employee("Rafael Nadal", "888 Juventud Rd", "9873459834", "ranada85@gmail.com", "Room 103", 70000.00,
                 LocalDate.of(2012,8,12));
 
-        System.out.println(testEmployee);
+        //toString method
+        System.out.println("toString: " + testEmployee);
+
+        //print full details
+        testEmployee.printDetails();
     }
 }

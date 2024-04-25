@@ -47,10 +47,15 @@ public class Person {
         this.email = email;
     }
 
+    public void printDetails(){
+        System.out.println("Person Name: " + getName());
+        System.out.println("Address: " + getAddress());
+        System.out.println("Phone Number: " + getPhoneNumber() );
+        System.out.println("Email: " + getEmail());
+    }
+
     @Override
     public String toString() {
-        return "Class name: " + getClass().getName() + ", Person name: " + getName()
-                + ", Address: " + getAddress() + ", Phone Number: " + getPhoneNumber()
-                + ", Email: " + getEmail();
+        return "Class name: " + getClass().getName() + ", Person name: " + getName();
     }
 }
