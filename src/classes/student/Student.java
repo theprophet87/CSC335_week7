@@ -1,7 +1,7 @@
-package classes;
+package classes.student;
 
+import classes.person.Person;
 import enums.Status;
-import interfaces.Course;
 
 public class Student extends Person {
     private Status status;

@@ -1,11 +1,10 @@
-package classes;
+package classes.staff;
+
+import classes.employee.Employee;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
-public class Staff extends Employee{
+public class Staff extends Employee {
     private String title;
 
     public Staff(){

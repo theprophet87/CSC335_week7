@@ -1,9 +1,11 @@
-package classes;
+package classes.faculty;
+
+import classes.employee.Employee;
 
 import java.time.LocalDate;
 import java.util.List;
 
-public class Faculty extends Employee{
+public class Faculty extends Employee {
     private List<String> courses;
     private String course;
 

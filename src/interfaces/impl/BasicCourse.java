@@ -1,5 +1,8 @@
-package classes;
+package interfaces.impl;
 
+import classes.faculty.Faculty;
+import classes.staff.Staff;
+import classes.student.Student;
 import interfaces.Course;
 
 import java.util.ArrayList;

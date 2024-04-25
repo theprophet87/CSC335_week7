@@ -1,4 +1,6 @@
-package classes;
+package classes.employee;
+
+import classes.person.Person;
 
 import java.time.LocalDate;
 
