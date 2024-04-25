@@ -1,11 +1,11 @@
 package interfaces;
 
-import classes.Faculty;
-import classes.Staff;
-import classes.Student;
+import classes.faculty.Faculty;
+import classes.staff.Staff;
+import classes.student.Student;
 
 public interface Course {
-    void addStudent(Student student);
+    void enrollStudent(Student student);
     void assignFaculty(Faculty faculty);
     void assignStaff(Staff staff);
     void courseDetails();
