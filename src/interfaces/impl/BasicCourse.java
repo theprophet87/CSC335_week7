@@ -22,7 +22,7 @@ public class BasicCourse implements Course {
     }
 
     @Override
-    public void addStudent(Student student) {
+    public void enrollStudent(Student student) {
         this.students.add(student);
     }
 
